@@ -1,0 +1,36 @@
+<div>
+
+  <a href="https://hoayeuthuong.com"> Click to this website to order</a>
+  <h1> Welcome to Chuyen's shop 🌷</h1>
+  <h2> Bringing smiles to your loved one 🤗 </h2>
+  <h3> </h3>
+  <h4 style="background-color:powderblue;"> Home &nbsp; &nbsp;  &nbsp; Subject &nbsp; &nbsp;  &nbsp; Occasion &nbsp; &nbsp;  &nbsp; Designer &nbsp; &nbsp;  &nbsp; About us
+
+
+  </h4>
+  <img
+    src="/designer.png"
+    height="380"
+    width="1270"
+  >
+
+
+  <div class="options">
+    @for (product of products; track product.name) {
+      <app-product
+        [name]="product.name"
+        [price]="product.price"
+        [url]="product.url"
+      >
+      </app-product>
+    }
+  </div>
+  <app-product
+  ></app-product>
+
+</div>
+
+
+
+
+
